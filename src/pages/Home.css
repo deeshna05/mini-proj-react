@@ -1,0 +1,38 @@
+
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow to ensure the image covers the container */
+  }
+  
+  .home-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container and maintain aspect ratio */
+    z-index: -1; /* Ensure the image is behind the text */
+  }
+  
+  .home-text {
+    position: absolute;
+    bottom: 50px; /* Adjust this value to move the text upwards */
+    left: 20px; /* Adjust the left positioning as needed */
+    color: white; /* Ensure text is readable against the background */
+    z-index: 1; /* Ensure text is above the image */
+  }
+  
+  .home-text h1 {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .home-text p {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    max-width: 600px; /* Optional: to prevent the text from stretching too wide */
+    margin-top: 0; 
+    color: #d5d5d5;/* Remove any default top margin if needed */
+  }
+  
